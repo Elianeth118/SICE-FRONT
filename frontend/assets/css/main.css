@@ -1,0 +1,60 @@
+body {
+    overflow-x: hidden; /* Previene scroll horizontal */
+    overflow-y: hidden; /* Previene scroll vertical */
+}
+
+input[readonly] {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+textarea[readonly] {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+p,span,a,input,label {
+    font-family: 'Krub', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+header {
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+    background-color: #253549; /* Encabezado fijo */
+    box-shadow: rgba(0, 0, 0, 0.4) 0 4px 8px;
+}
+
+.menu-lateral {
+    margin-top: 100px;
+    height: calc(100vh - 100px); /* Resta la altura del header */
+    overflow-y: auto; /* Scroll vertical */
+    max-width: 250px;
+    z-index: 1030;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 4px 8px;
+}
+
+.offcanvas-sm {
+    margin-top: 100px;
+    height: calc(100vh - 100px); /* Resta la altura del header */
+    overflow-y: auto; /* Scroll vertical */
+     /*background-color: #e1f6f2 !important;*/
+    max-width: 250px;
+    z-index: 1030;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 4px 8px;
+}
+
+.content {
+    margin-top: 100px;
+    height: calc(100vh - 100px); /* Resta la altura del header */
+    overflow-y: auto; /* Scroll vertical */
+    padding: 20px;
+    background-color: #ffffff;
+}

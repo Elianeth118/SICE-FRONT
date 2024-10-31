@@ -1,0 +1,56 @@
+
+        <div class="fragment">
+            <div class="fragment-header">
+                <h4 class="text-center mb-0"> REQUISITOS DE LA FOTOGRAFÍA </h4>
+            </div>
+            <div class="fragment-body">
+                <form id="search-form">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h6><strong>CARACTERÍSTICAS:</strong></h6>
+                            <ul>
+                                <li>La fotografía debe tomarse de frente con un fondo blanco.</li>
+                                <li>Evite usar sombreros u objetos que cubran su cabeza, ya que no deben crear sombras en su rostro.</li>
+                                <li>No se permiten audífonos, dispositivos inalámbricos manos libres u otros artículos similares en la foto.</li>
+                                <li>Sí usted utiliza lentes normalmente, un dispositivo auditivo, o articulos similares, pueden ser usados en su foto.</li>
+                                <li>No son aceptables lentes obscuros o lentes polarizados.</li>
+                                <li> No son aceptables fotos grupales o selfies.</li>
+                                <li>No son aceptables fotos borrosas.</li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <div>
+                                    <div class="mb-4 d-flex justify-content-center">
+                                        <img id="image-preview" src="/assets/images/sample_photo.jpg" alt="example placeholder" style="width: 200px;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <ul>
+                                <li>No son aceptables fotos con paisajes o muebles de fondo.</li>
+                                <li>La fotografía debe ser tomada recientemente y no debe estar retocada.</li>
+                            </ul>
+                            <p>El archivo debe ser en formato .jpg, tamaño minimo de 150 x 200 pixeles y máximo 480 x 640 pixeles.</p>
+                            <P><strong> NOTA:</strong> El sistema verificará las dimensiones y el tamaño del archivo. Si no cumple con las características descritas, no se permitirá cargar la fotografía.</P>
+                        </div>
+                    </div>
+                    <div class="row" >
+                        <div class="form-floating mb-3">
+                            <div class="align-items-center text-center" >
+                                <button type="button" id= "btnRequisitos" class="uabjo-btn-primary"
+                                        onclick="loadPage('admission/load_photo.html', 'content',
+                                        function () {
+                                            loadScript('assets/js/uploadfile.js','uploadfile');
+                                            loadData();}); ">Siguiente
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+

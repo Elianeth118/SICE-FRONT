@@ -1,0 +1,78 @@
+.badge-circle {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-right: 8px;
+}
+.fragment-curp {
+    margin-top: 10px;
+    padding: 0;
+    border: none;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+}
+.fragment {
+    margin-top: 10px;
+    padding: 0;
+    border: none;
+    width:800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .fragment-curp {
+        margin-top: 10px;
+        padding: 0;
+        border: none;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        border-radius: 25px;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .fragment {
+        margin-top: 10px;
+        padding: 0;
+        border: none;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        border-radius: 25px;
+    }
+
+}
+
+.fragment-curp-header, .fragment-header {
+    background-color: #243549;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    border-radius: 25px 25px 0 0;
+    padding: 5px;
+}
+.fragment-curp-body, .fragment-body {
+    background-color: #fff;
+    border: none;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+
+}
+
+.form-control.valid {
+    border-color: green;
+}
+
+.form-control.invalid {
+    border-color: red;
+}
+
+.select2 {
+    width: 100%;
+    max-width: 100%;
+}

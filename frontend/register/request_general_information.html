@@ -1,0 +1,138 @@
+
+    <div class="fragment">
+      <div class="fragment-header">
+        <h4 class="text-center title">DATOS PERSONALES</h4>
+      </div>
+      <div class="fragment-body">
+        <form class="row g-3 needs-validation"
+              id="formGeneral_Information" novalidate>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="curp"
+                  readonly
+                  required
+                />
+                <label for="curp">CURP:</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control upper"
+                  id="nombre"
+                  placeholder=""
+                  autocomplete="off"
+                  required
+                />
+                <label for="nombre">Nombre(s):</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control upper"
+                  id="apellidoPaterno"
+                  placeholder=""
+                  autocomplete="off"
+                  required
+                />
+                <label for="apellidoPaterno">Primer apellido:</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control upper"
+                  id="apellidoMaterno"
+                  autocomplete="off"
+                  placeholder=""
+
+                />
+
+                <label for="apellidoMaterno">Segundo apellido:</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fechaNacimiento"
+                  placeholder=""
+                  readonly
+                  required
+                />
+                <label for="fechaNacimiento">Fecha de nacimiento:</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="genero"
+                  placeholder=""
+                  readonly
+                  required
+                />
+                <label for="genero">Género:</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nacionalidad"
+                  placeholder=""
+                  readonly
+                  required
+                />
+                <label for="nacionalidad">Nacionalidad:</label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="estadoNacimiento"
+                  placeholder=""
+                  readonly
+                  required
+                />
+                <label class="color" for="estadoNacimiento">
+                  Estado de nacimiento:
+                </label>
+
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="form-floating mb-3">
+                  <div>
+                      <label for="municipioNacimiento">Municipio de nacimiento</label>
+                  </div>
+                  <select id="municipioNacimiento" class="form-select select2"
+                          placeholder="SELECCIONE EL MUNICIPIO"
+                          required >
+                  </select>
+                <div class="invalid-feedback">Por favor, elige un municipio</div>
+              </div>
+            </div>
+          </div>
+          <div class="align-items-center text-center" >
+            <button type="button" class="btn uabjo-btn-primary" id="btnNext">
+              Siguiente
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+

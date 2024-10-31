@@ -1,0 +1,310 @@
+<div class="row justify-content-center">
+    <div class="col-sm-12 col-md-8 col-lg-6">
+        <form class="row g-3 needs-validation"
+              id="formEditAspirant" novalidate>
+
+            <div class="box">
+                <div class="box-header">
+                    <h6 class="text-center title">DATOS PERSONALES</h6>
+                </div>
+                <div class="box-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-floating mb-3">
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="curp"
+                                        readonly
+                                        required
+                                />
+                                <label for="curp">CURP:</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating mb-3">
+                                <input
+                                        type="text"
+                                        class="form-control upper"
+                                        id="nombre"
+                                        placeholder=""
+                                        autocomplete="off"
+                                        required
+                                />
+                                <label for="nombre">Nombre(s):</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating mb-3">
+                                <input
+                                        type="text"
+                                        class="form-control upper"
+                                        id="apellidoPaterno"
+                                        placeholder=""
+                                        autocomplete="off"
+                                        required
+                                />
+                                <label for="apellidoPaterno">Primer apellido:</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating mb-3">
+                                <input
+                                        type="text"
+                                        class="form-control upper"
+                                        id="apellidoMaterno"
+                                        autocomplete="off"
+                                        placeholder=""
+
+                                />
+
+                                <label for="apellidoMaterno">Segundo apellido:</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating mb-3">
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="fechaNacimiento"
+                                        placeholder=""
+                                        readonly
+                                        required
+                                />
+                                <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating mb-3">
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="genero"
+                                        placeholder=""
+                                        readonly
+                                        required
+                                />
+                                <label for="genero">Género:</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating mb-3">
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="nacionalidad"
+                                        placeholder=""
+                                        readonly
+                                        required
+                                />
+                                <label for="nacionalidad">Nacionalidad:</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-floating mb-3">
+                                <input
+                                        type="text"
+                                        class="form-control"
+                                        id="estadoNacimiento"
+                                        placeholder=""
+                                        readonly
+                                        required
+                                />
+                                <label class="color" for="estadoNacimiento">
+                                    Estado de nacimiento:
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-12">
+                            <div class="form-floating mb-3">
+                                <div>
+                                    <label for="municipioNacimiento">Municipio de nacimiento</label>
+                                </div>
+                                <select id="municipioNacimiento"  class="form-select"
+                                        placeholder="SELECCIONE UN MUNICIPIO"
+                                        style="width:100%;display:block;box-sizing:border-box"
+                                        required >
+                                </select>
+                                <div class="invalid-feedback">Por favor, elija un municipio</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-header">
+                    <h6 class="text-center mb-0 title">DATOS DE CONTACTO</h6>
+                </div>
+                <div class="box-body">
+                        <div class="form-group">
+                            <div class="form-floating mb-3">
+                                <input type="tel"
+                                       class="form-control only-number"
+                                       id="telefonoCelular"
+                                       name="telefonoCelular"
+                                       placeholder=""
+                                       pattern="\d{10}"
+                                       maxlength="10"
+                                       required>
+                                <label for="telefonoCelular">Teléfono celular:</label>
+                                <div class="invalid-feedback"> Por favor, ingresa el número de teléfono. </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="tel"
+                                       class="normal form-control only-number"
+                                       id="telefonoCasa"
+                                       name="telefonoCasa"
+                                       pattern="\d{10}"
+                                       placeholder=""
+                                       maxlength="10" >
+                                <label for="telefonoCasa" class=" form-label">Teléfono de casa:</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text"
+                                       class="form-control lower"
+                                       id="correoElectronico"
+                                       name="correoElectronico"
+                                       placeholder=""
+                                       pattern="[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-]([\.]?[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-])+@[a-zA-Z0-9]([^@&%$\/\(\)=?¿!\.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,}([\.][a-zA-Z]{2})?"
+                                       required>
+                                <label for="correoElectronico">Correo electrónico (Personal):</label>
+                                <div id="email-feedback" class="invalid-feedback">El correo es requerido </div>
+                            </div>
+                            <div class="form-floating  mb-3">
+                                <input type="text"
+                                       class="form-control lower"
+                                       id="correoValidacion"
+                                       name="correoValidacion"
+                                       placeholder=""
+                                       onpaste="return false;"
+                                       pattern="[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-]([\.]?[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-])+@[a-zA-Z0-9]([^@&%$\/\(\)=?¿!\.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,}([\.][a-zA-Z]{2})?"
+
+                                       required>
+                                <label for="correoValidacion">Confirme el correo (Personal):</label>
+                                <div id="email-confirm-feedback" class="invalid-feedback">El correo es requerido </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-header">
+                    <h6 class="text-center mb-0">DATOS DE DIRECCIÓN</h6>
+                </div>
+                <div class="box-body">
+                        <div class="form-group">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control upper"
+                                       maxlength="50"
+                                       id="ciudad" placeholder="" required>
+                                <label for="ciudad" class="form-label">Ciudad:</label>
+                                <div class="invalid-feedback">Ingresa tu ciudad actual.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control only-number"
+                                       id="codigoPostal" placeholder=""
+                                       pattern="\d{5,5}"
+                                       maxlength="5" required>
+                                <label for="codigoPostal" class="form-label">Código Postal:</label>
+                                <div class="invalid-feedback">
+                                    Ingresa el código postal.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <div><label for="localidad" class="form-label">Colonia</label></div>
+                                <div>
+                                    <select id="localidad" class="form-select"
+                                            style="width:100%;display:block;box-sizing:border-box"
+                                            placeholder="SELECCIONE UNA COLONIA"
+                                            required >
+                                    </select>
+                                </div>
+                                <div class="invalid-feedback">Selecciona tu colonia actual.
+                                </div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control"
+                                       maxlength="100"
+                                       id="calle" placeholder="" required>
+                                <label for="calle" class="form-label">Calle:</label>
+                                <div class="invalid-feedback">Ingresa la calle de tu domicilio actual.
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-floating  mb-3">
+                                        <input type="text" class="form-control only-number"
+                                               id="numExterior"
+                                               maxlength="5"
+                                               placeholder=""  required>
+                                        <label for="numExterior"
+                                               class="form-label">Número Exterior:
+                                        </label>
+                                        <div class="invalid-feedback">Ingresa el número.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-floating  mb-3">
+                                        <input type="text" class="form-control upper"
+                                               maxlength="10"
+                                               id="numInterior" placeholder="">
+                                        <label for="numInterior" class="form-label">Número Interior:</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-header">
+                    <h6 class="text-center mb-0">ESCUELA DE PROCEDENCIA</h6>
+                </div>
+                <div class="box-body">
+                        <div class="form-floating mb-3">
+                            <div><label for="estadoescuela">Estado de la escuela de procedencia</label></div>
+                            <select id="estadoescuela"
+                                    class="form-select"
+                                    style="width:100%;display:block;box-sizing:border-box"
+                                    placeholder="SELECCIONE UN ESTADO"  required >
+                            </select>
+                            <div class="invalid-feedback">Selecciona un estado de la lista.
+                            </div>
+                        </div>
+                        <a href="https://www.siged.sep.gob.mx/SIGED/escuelas.html" target="blank">Consulta aquí la CCT</a>
+                        <div class="form-floating mb-3">
+                            <div><label for="claveescuela">Clave del CCT</label></div>
+                            <select id="claveescuela" class="form-select"
+                                    style="width:100%;display:block;box-sizing:border-box"
+                                    placeholder="SELECCIONE UNA ESCUELA" required>
+                            </select>
+                            <div class="invalid-feedback">Ingresa la CCT de tu escuela.
+                            </div>
+                        </div>
+                        <div class="form-floating  mb-3">
+                        <textarea class="form-control auto-expand"
+                                  style="height: 100px;"
+                                  rows="3" cols="50"
+                                  id="escuela"
+                                  readonly></textarea>
+                            <label for="escuela" class="form-label">Escuela de Procedencia:</label>
+
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="municipio"
+                                   readonly>
+                            <label for="municipio" class="form-label">Municipio:</label>
+                        </div>
+
+                        <div class="button">
+                            <button type="button" class="btn btn-primary"
+                                    id="btnConfirm">Confirmar
+                            </button>
+                        </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

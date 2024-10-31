@@ -1,0 +1,74 @@
+
+        <div class="fragment">
+            <div class="fragment-header">
+                <h4 class="text-center mb-0">DATOS DE DIRECCIÓN</h4>
+            </div>
+            <div class="fragment-body">
+                <form id="formAddress" class="row g-3 needs-validation" novalidate>
+                    <div class="form-group">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control upper"
+                                maxlength="50"
+                                id="ciudad" placeholder="" required>
+                            <label for="ciudad" class="form-label">Ciudad:</label>
+                            <div class="invalid-feedback">Ingresa tu ciudad actual.
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control only-number"
+                                id="codigoPostal" placeholder="" pattern="\d{5,5}"
+                                maxlength="5" required>
+                            <label for="codigoPostal" class="form-label">Código Postal:</label>
+                            <div class="invalid-feedback">
+                                Ingresa el código postal.
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <div><label for="localidad" class="form-label">Colonia</label></div>
+                            <select id="localidad" class="form-select select2"
+                                    placeholder ="SELECCIONE UNA COLONIA"
+                                    required >
+                            </select>
+
+                            <div class="invalid-feedback">Selecciona tu colonia actual.
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control"
+                            maxlength="100"
+                            id="calle" placeholder="" required>
+                            <label for="calle" class="form-label">Calle:</label>
+                            <div class="invalid-feedback">Ingresa la calle de tu domicilio actual.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-floating  mb-3">
+                                    <input type="text" class="form-control only-number"
+                                        id="numExterior"
+                                           maxlength="5"
+                                        placeholder=""  required>
+                                    <label for="numExterior"
+                                           class="form-label">Número Exterior:
+                                    </label>
+                                    <div class="invalid-feedback">Ingresa el número.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-floating  mb-3">
+                                    <input type="text" class="form-control upper"
+                                        maxlength="10"
+                                        id="numInterior" placeholder="">
+                                    <label for="numInterior" class="form-label">Número Interior:</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="align-items-center text-center" >
+                            <button type="button" class="btn btn-primary" id="btnNext">Siguiente</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+

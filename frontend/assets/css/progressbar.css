@@ -1,0 +1,17 @@
+#progress-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    text-align: center;
+}
+.spinner-border {
+    width: 64px; /* Ancho de la barra de progreso */
+    height: 64px; /* Altura de la barra de progreso */
+    font-size: 2rem; /* Tamaño del icono */
+}
+.custom-spinner {
+    color: #ba8c10; /* Color personalizado (naranja) */
+}

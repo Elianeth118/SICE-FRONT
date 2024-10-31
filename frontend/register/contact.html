@@ -1,0 +1,59 @@
+        <div class="fragment">
+            <div class="fragment-header">
+                <h4 class="text-center mb-0 title">DATOS DE CONTACTO</h4>
+            </div>
+            <div class="fragment-body">
+                <form id="formContact"  class="needs-validation" novalidate>
+                    <div class="form-group">
+                        <div class="form-floating mb-3">
+                            <input type="tel"
+                                   class="form-control only-number"
+                                   id="telefonoCelular"
+                                   name="telefonoCelular"
+                                   pattern="\d{10}"
+                                   placeholder=""
+                                   maxlength="10"
+                                   required>
+                            <label for="telefonoCelular">Teléfono celular:</label>
+                            <div class="invalid-feedback"> Por favor, ingresa el número de teléfono. </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="tel"
+                                   class="normal form-control only-number"
+                                   id="telefonoCasa"
+                                   name="telefonoCasa"
+                                   pattern="\d{10}"
+                                   placeholder=""
+                                   maxlength="10" >
+                            <label for="telefonoCasa" class=" form-label">Teléfono de casa:</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text"
+                                   class="form-control lower"
+                                   id="correoElectronico"
+                                   name="correoElectronico"
+                                   placeholder="usuario@dominio"
+                                   pattern="[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-]([\.]?[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-])+@[a-zA-Z0-9]([^@&%$\/\(\)=?¿!\.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,}([\.][a-zA-Z]{2})?"
+                                   required>
+                            <label for="correoElectronico">Correo electrónico (Personal):</label>
+                            <div id="email-feedback" class="invalid-feedback">El correo es requerido </div>
+                        </div>
+                        <div class="form-floating  mb-3">
+                            <input type="text"
+                                   class="form-control lower"
+                                   id="correoValidacion"
+                                   name="correoValidacion"
+                                   placeholder="usuario@dominio"
+                                   pattern="[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-]([\.]?[a-zA-Z0-9!#$%&'*\/=?^_`\{\|\}~\+\-])+@[a-zA-Z0-9]([^@&%$\/\(\)=?¿!\.,:;]|\d)+[a-zA-Z0-9][\.][a-zA-Z]{2,}([\.][a-zA-Z]{2})?"
+                                   onpaste="return false;"
+                                   required>
+                            <label for="correoValidacion">Confirme el correo (Personal):</label>
+                            <div id="email-confirm-feedback" class="invalid-feedback">El correo es requerido </div>
+                        </div>
+                        <div class="align-items-center text-center" >
+                            <button type="button" class="btn uabjo-btn-primary"  id="btnNext">Siguiente</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>

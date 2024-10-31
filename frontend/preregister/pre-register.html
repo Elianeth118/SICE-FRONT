@@ -1,0 +1,356 @@
+<form class="row g-3 needs-validation"
+      id="formPreinscricionAspirante"
+      novalidate>
+
+    <!-- Título Principal -->
+    <div class="fragment">
+        <div class="fragment-header">
+            <h1 class="text-center title">Solicitud de Inscripción Primer Ingreso</h1>
+        </div>
+    </div>
+
+    <!-- Aviso -->
+    <div class="fragment">
+        <div class="fragment-header">
+            <h6 class="text-center title">Aviso</h6>
+            <p class="text-center"><strong id="nombreCompleto" ></strong></p>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center">
+                    Después de realizar el pago de tu ficha y haber transcurrido 24 horas, deberás regresar para requisitar el diagnóstico de ingreso, para poder concluir el proceso de preinscripción. Sin ello, no podrás continuar con tu proceso de inscripción como lo marca la convocatoria.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Datos del Aspirante -->
+    <div class="fragment">
+        <div class="fragment-header">
+            <h6 class="text-center title">DATOS DEL ASPIRANTE</h6>
+        </div>
+        <div class="fragment-body">
+            <div class="row ">
+                <!-- Carrera a ingresar -->
+                <div class="col-sm-12">
+                    <label for="nombreCarrera" >Carrera a ingresar:</label>
+                    <input type="text" class="form-control" id="nombreCarrera" readonly />
+
+                </div>
+
+
+            </div>
+            <!-- CURP -->
+            <div class="row mb-4 ">
+                <div class="col-sm-6">
+                    <label for="curp" >Curp:</label>
+                    <input type="text" class="form-control" id="curp" readonly />
+                </div>
+            </div>
+            <div class="row justify-content-center mb-4">
+                <!-- Apellido paterno -->
+                <div class="col-sm-4">
+                    <label for="a_paterno" class="form-label">Apellido paterno:</label>
+                    <input type="text" class="form-control upper" id="a_paterno" readonly />
+                </div>
+
+                <!-- Apellido materno -->
+                <div class="col-md-4">
+                    <label for="a_materno" class="form-label">Apellido Materno:</label>
+                    <input type="text" class="form-control upper" id="a_materno" readonly/>
+                </div>
+
+                <!-- nombre -->
+                <div class="col-md-4">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control upper" id="nombre" readonly/>
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center mb-4">
+                <!-- Estado -->
+                <div class="col-md-3">
+                    <label for="estado" class="form-label">Estado:</label>
+                    <select id="estado" class="form-control">
+
+                        <option value="0">Selecciona un estado</option>
+                        <!-- Las opciones de estados serán agregadas dinámicamente -->
+                    </select>
+                </div>
+
+                <!-- Municipio -->
+                <div class="col-md-3">
+                    <label for="MunicipioAlumno" class="form-label">Municipio:</label>
+                    <select id="MunicipioAlumno" class="form-select"  placeholder="SELECCIONA TU MUNICIPIO" required></select>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="cpAlumno" class="form-label">Código Postal:</label>
+                    <input type="text" class="form-control only-number"
+                           id="cpAlumno" placeholder=""  required>
+                    <div class="invalid-feedback">Ingresa el código postal.</div>
+                </div>
+
+                <!-- Colonia -->
+                <div class="col-md-3">
+                    <label for="localidadAlumno" class="form-label">Colonia</label>
+                    <select id="localidadAlumno" class="form-select select2"
+                            placeholder ="SELECCIONE UNA COLONIA" required >
+                    </select>
+                    <div class="invalid-feedback">Selecciona tu colonia actual.</div>
+
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-4">
+                <!-- Número exterior -->
+                <div class="col-md-4">
+                    <label for="calle" class="form-label">Calle:</label>
+                    <input type="text" class="form-control upper" id="calle" required />
+                </div>
+
+                <div class="col-md-4">
+                    <label for="num_exterior" class="form-label">Número Exterior:</label>
+                    <input type="text" class="form-control only-number" id="num_exterior" maxlength="5" required />
+                </div>
+
+                <div class="col-md-4">
+                    <label for="num_interior" class="form-label">Número Interior:</label>
+                    <input type="text" class="form-control upper" id="num_interior" maxlength="10" required/>
+                </div>
+
+
+            </div>
+
+            <div class="row justify-content-center mb-4">
+                <!-- Teléfono -->
+                <div class="col-md-4">
+                    <label for="celular" class="form-label">Teléfono celular:</label>
+                    <input type="tel" class="form-control only-number" id="celular" pattern="\d{10}" maxlength="10" required />
+                </div>
+
+                <!-- Correo electronico -->
+                <div class="col-md-4">
+                    <label for="correo_e" class="form-label">Correo electrónico (Personal):</label>
+                    <input type="email" class="form-control lower" id="correo_e" required />
+                </div>
+
+                <div class="col-md-4">
+                    <label for="estadoCivil" class="form-label">Estado Civil:</label>
+                    <select id="estadoCivil" class="form-select" required>
+                        <option >Seleccione una opción</option>
+                        <option value="1">SOLTERO/A</option>
+                        <option value="2">CASADO/A</option>
+                        <option value="3">UNION LIBRE</option>
+                        <option value="4">DIVORSIADO/A O VIUDO/A</option>
+
+                    </select>
+                </div>
+
+            </div>
+            <div class="row justify-content-center mb-4">
+            <div class="col-md-4">
+                <label for="nacionalidadAlumno" class="form-label">Nacionalidad</label>
+                <select id="nacionalidadAlumno" class="form-select" name="" required>
+                    <option value="">Seleccione una opción</option>
+                    <option value="MEXICANA">MEXICANA</option>
+                    <option value="EXTRANJERA">EXTRANJERA</option>
+                </select>
+            </div>
+            <!-- Escuela de procedencia -->
+            <div class="col-md-8">
+                <label for="escuela_procedencia" class="form-label">Escuela de procedencia:</label>
+                <input type="text" class="form-control upper" id="escuela_procedencia" readonly/>
+            </div>
+                </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <div class="fragment">
+        <div class="fragment-body">
+            <div class="row justify-content-center">
+                <div class="row mb-4">
+                    <div class="col-md-8">
+                        <label for="afrodescendiente" class="form-label">¿Según su origen, se considera Afrodescendiente?</label>
+                        <select id="afrodescendiente" name="afrodescendiente" class="form-select" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="Sí">Sí</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-8 mb-4">
+                        <label for="grupoIndigena" class="form-label">¿Perteneces a un grupo indígena? Indica cuál</label>
+                        <select id="grupoIndigena" name="grupoIndigena" class="form-select" required>
+                            <option value=0>Seleccione una opcion</option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-8 mb-4">
+                        <label for="lengua" class="form-label">¿Ablas alguna lengua? Indica cuál</label>
+                        <select id="lengua" name="lengua" class="form-select" required>
+                            <option value=0>Seleccione una opcion</option>
+                        </select>
+                    </div>
+
+
+                    <div class="col-md-8 mb-4">
+                        <label for="discapacidad" class="form-label">¿Padece de alguna discapacidad? Indica cúal</label>
+                        <select id="discapacidad" name="discapacidad" class="form-select" required>
+                            <option value=0>Seleccione una opcion</option>
+                        </select>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Datos del Responsable o Tutor -->
+    <div class="fragment">
+        <div class="fragment-header">
+            <h6 class="text-center title">DATOS DEL RESPONSABLE O TUTOR</h6>
+        </div>
+        <div class="fragment-body">
+            <div class="row justify-content-center">
+
+                <div class="col-md-4">
+                    <label for="apellidoPaternotutor" class="form-label">Apellido paterno:</label>
+                    <input type="text" class="form-control upper" id="apellidoPaternotutor" required />
+                </div>
+
+                <div class="col-md-4">
+                    <label for="apellidoMaternotutor" class="form-label">Apellido Materno:</label>
+                    <input type="text" class="form-control upper" id="apellidoMaternotutor" />
+                </div>
+
+                <div class="col-md-4">
+                    <label for="nombretutor" class="form-label">Nombre(s):</label>
+                    <input type="text" class="form-control upper" id="nombretutor" required />
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <label for="nacionalidadtutor" class="form-label">Nacionalidad</label>
+                    <select id="nacionalidadtutor" class="form-select" name="" required>
+                        <option value="">Seleccione una opción</option>
+                        <option value="MEXICANA">MEXICANA</option>
+                        <option value="EXTRANJERA">EXTRANJERA</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="estadoNacimientotutor" class="form-label">Estado (*)</label>
+                    <select id="estadoNacimientotutor" class="form-select" name="" required></select>
+                </div>
+
+                <div class="col-md-3">
+                    <label for="Municipiotutor" class="form-label">Municipio:</label>
+                    <select id="Municipiotutor" class="form-select" required></select>
+                </div>
+                <div class="col-md-3">
+                    <label for="cpTutor" class="form-label">Código Postal:</label>
+                    <input type="text" class="form-control only-number"
+                           id="cpTutor" placeholder=""  required>
+                    <div class="invalid-feedback">Ingresa el código postal.</div>
+                </div>
+
+
+
+
+
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-3">
+                    <label for="coloniatutor" class="form-label">Colonia</label>
+                    <select id="coloniatutor" class="form-select select2"
+                            placeholder ="SELECCIONE UNA COLONIA" required >
+                    </select>
+                    <div class="invalid-feedback">Selecciona tu colonia actual.</div>
+
+                </div>
+                <div class="col-md-3">
+                    <label for="Calletutor" class="form-label">Calle:</label>
+                    <input type="text" class="form-control upper" id="Calletutor" required />
+                </div>
+
+                <div class="col-sm-3">
+                    <label for="numExteriortutor" class="form-label">Número Exterior:</label>
+                    <input type="text" class="form-control only-number" id="numExteriortutor" maxlength="5" required />
+                </div>
+                <div class="col-sm-3">
+                    <label for="numInteriortutor" class="form-label">Número Interior:</label>
+                    <input type="text" class="form-control only-number" id="numInteriortutor" maxlength="5" required />
+                </div>
+
+            </div>
+
+            <div class="row justify-content-center">
+                <!-- Teléfono -->
+                <div class="col-md-4">
+                    <label for="telefonoTutor" class="form-label">Teléfono celular:</label>
+                    <input type="text" class="form-control only-number" id="telefonoTutor" pattern="\d{10}" maxlength="10" required />
+                </div>
+
+                <div class="col-md-6">
+                <label for="parentesco" class="form-label">Parentesco:</label>
+                <select id="parentesco" name="parentesco" class="form-select" required>
+                    <option value=0>Seleccione una opcion</option>
+                    <!-- Las opciones se llenarán dinámicamente con JavaScript -->
+                </select>
+            </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <p class="text-center">Fecha: <strong id="fechaRegistro"></strong></p>
+    <div class="form-floating mb-4">
+        <div class="align-items-center text-center" >
+            <button type="button" class="uabjo-btn-primary"
+                    id="btnSavePreincripcion">Siguiente
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</form>
+<button id="generatePDF">Generar PDF</button>
+
+

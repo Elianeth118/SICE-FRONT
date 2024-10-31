@@ -1,0 +1,52 @@
+        <div class="fragment">
+            <div class="fragment-header">
+                <h4 class="text-center mb-0">ESCUELA DE PROCEDENCIA</h4>
+            </div>
+            <div class="fragment-body">
+                <form id="formSchoolOrigin" class="row g-3 needs-validation" novalidate>
+                    <div class="form-floating mb-3">
+                        <div><label for="estadoescuela">Estado de la escuela de procedencia</label></div>
+                        <select id="estadoescuela" class="form-select select2"
+                                placeholder="SELECCIONE UN ESTADO"
+                                required >
+                        </select>
+
+                        <div class="invalid-feedback">Selecciona un estado de la lista.
+                        </div>
+                    </div>
+                    <a href="https://www.siged.sep.gob.mx/SIGED/escuelas.html" target="blank">Consulta aquí la CCT</a>
+                    <div class="form-floating mb-3">
+                        <div><label for="claveescuela">Clave del CCT</label></div>
+                        <select class="form-select select2" id="claveescuela"
+                                placeholder="SELECCIONE UNA ESCUELA"
+                                required>
+                        </select>
+
+                        <div class="invalid-feedback">Ingresa la CCT de tu escuela.
+                        </div>
+                    </div>
+                    <div class="form-floating  mb-3">
+                        <textarea class="form-control auto-expand"
+                                  style="height: 100px;"
+                                  rows="3" cols="50"
+                                  id="escuela" placeholder=""
+                                  readonly required></textarea>
+                        <label for="escuela" class="form-label">Escuela de Procedencia:</label>
+
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="municipio"
+                               readonly required>
+                        <label for="municipio" class="form-label">Municipio:</label>
+                    </div>
+
+                    <div class="align-items-center text-center" >
+                        <button type="button" class="btn btn-primary"
+                                id="btnNext">Siguiente
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

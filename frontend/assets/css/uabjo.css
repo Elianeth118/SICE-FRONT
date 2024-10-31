@@ -1,0 +1,299 @@
+/* =================================================  */
+/* Elementos principales
+/* =================================================  */
+body {
+    overflow-x: hidden; /* Previene scroll horizontal */
+    overflow-y: hidden; /* Previene scroll vertical */
+}
+
+input[readonly] {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+textarea[readonly] {
+    background-color: #ffffff;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+p,span,a,input,label {
+    font-family: 'Krub', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+header {
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+    background-color: #253549; /* Encabezado fijo */
+    box-shadow: rgba(0, 0, 0, 0.4) 0 4px 8px;
+}
+
+.menu-lateral {
+    margin-top: 100px;
+    height: calc(100vh - 100px); /* Resta la altura del header */
+    overflow-y: auto; /* Scroll vertical */
+    max-width: 250px;
+    z-index: 1030;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 4px 8px;
+}
+
+.offcanvas-sm {
+    margin-top: 100px;
+    height: calc(100vh - 100px); /* Resta la altura del header */
+    overflow-y: auto; /* Scroll vertical */
+    /*background-color: #e1f6f2 !important;*/
+    max-width: 250px;
+    z-index: 1030;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 4px 8px;
+}
+
+.content {
+    margin-top: 100px;
+    height: calc(100vh - 100px); /* Resta la altura del header */
+    overflow-y: auto; /* Scroll vertical */
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+/* =================================================  */
+/* configuración para ventana de alerta
+/* =================================================  */
+#alertWindow .modal-header {
+    height: 52px;
+    min-height: 52px;
+    border: 0;
+    background-color: #002849;
+    color: #fff;
+    text-align: center;
+}
+#alertWindow .modal-body { padding: 0 40px; }
+#alertWindow .modal-body  p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+}
+#alertWindow .modal-footer {
+    border: 0;
+}
+
+
+#alertWindow .submit {
+    height: 45px;
+    line-height: 45px;
+    /*width: 20px;*/
+    background: #002849;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+    padding: 3px;
+    min-width: 40px;
+    margin-bottom: 3px;
+}
+#alertWindow .submit:hover {
+    box-shadow: 3px 0 30px rgba(163,163,163, 1);
+}
+
+/* =================================================  */
+/* configuración para la barra de progreso
+/* =================================================  */
+
+#progress-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    text-align: center;
+}
+.spinner-border {
+    width: 64px; /* Ancho de la barra de progreso */
+    height: 64px; /* Altura de la barra de progreso */
+    font-size: 2rem; /* Tamaño del icono */
+}
+.custom-spinner {
+    color: #ba8c10; /* Color personalizado (naranja) */
+}
+
+/* =================================================  */
+/* Elementos con colores institucionales de la UABJO
+/* =================================================  */
+.uabjo-bg-color {
+    background-color: #243549;
+    color: #ffffff;
+}
+
+.uabjo-text-color-gold {
+    color: #A19B66;
+}
+
+.uabjo-btn-primary {
+    background-color: #243549; /* Fondo oscuro */
+    color: white;              /* Color de texto blanco */
+    border: 2px solid #243549; /* Borde del mismo color que el fondo */
+    border-radius: 16px;
+    padding: 16px;
+    font-size: 16px;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s;
+    min-width: 150px;
+    cursor: pointer;
+}
+
+/* Efecto hover */
+.uabjo-btn-primary:hover:not(:disabled) {
+    background-color: #1b2a3c; /* Fondo un poco más oscuro en hover */
+    transform: translateY(-3px); /* Elevación sutil en hover */
+}
+
+/* Efecto activo */
+.uabjo-btn-primary:active:not(:disabled) {
+    background-color: #16222f; /* Fondo más oscuro cuando se presiona */
+    transform: translateY(0); /* Eliminar la elevación al presionar */
+}
+
+/* Estilo cuando está deshabilitado */
+.uabjo-btn-primary:disabled {
+    background-color: #a5a5a5; /* Fondo gris para indicar deshabilitado */
+    color: #e0e0e0;            /* Color de texto gris claro */
+    border-color: #a5a5a5;     /* Borde gris a juego */
+    cursor: not-allowed;       /* Cursor de "no permitido" */
+    transform: none;           /* Sin transformación */
+}
+
+.uabjo-btn-secondary {
+    background-color: #f5f5f5; /* Fondo claro */
+    color: #243549;           /* Color de texto oscuro */
+    border: 2px solid #243549; /* Borde del mismo color que el fondo del botón primario */
+    border-radius: 16px;
+    padding: 16px;
+    font-size: 16px;
+    position: relative;
+    transition: background-color 0.3s, transform 0.3s;
+    min-width: 150px;
+}
+
+/* Efecto hover */
+.uabjo-btn-secondary:hover {
+    background-color: #e1e1e1; /* Fondo un poco más oscuro en hover */
+    transform: translateY(-3px); /* Elevación sutil en hover */
+}
+
+/* Efecto activo */
+.uabjo-btn-secondary:active {
+    background-color: #d1d1d1; /* Fondo más oscuro cuando se presiona */
+    transform: translateY(0); /* Eliminar la elevación al presionar */
+}
+
+
+/* =================================================  */
+/* Configuraciones extras
+/* =================================================  */
+.badge-circle {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 14px;
+    margin-right: 8px;
+}
+.fragment-curp {
+    margin-top: 10px;
+    padding: 0;
+    border: none;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+}
+.fragment {
+    margin-top: 10px;
+    padding: 0;
+    border: none;
+    width:800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .fragment-curp {
+        margin-top: 10px;
+        padding: 0;
+        border: none;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        border-radius: 25px;
+    }
+
+}
+@media screen and (max-width: 600px) {
+    .fragment {
+        margin-top: 10px;
+        padding: 0;
+        border: none;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        border-radius: 25px;
+    }
+
+}
+
+.fragment-curp-header, .fragment-header {
+    background-color: #243549;
+    height: auto;
+    color: #fff;
+    text-align: center;
+    border-radius: 25px 25px 0 0;
+    padding: 5px;
+}
+.fragment-curp-body, .fragment-body {
+    background-color: #fff;
+    border: none;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+
+}
+
+.form-control.valid {
+    border-color: green;
+}
+
+.form-control.invalid {
+    border-color: red;
+}
+
+.select2 {
+    width: 100%;
+    max-width: 100%;
+}
+
+.warning {
+    /* display: none;*/
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}

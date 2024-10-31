@@ -1,0 +1,56 @@
+<div class="fragment">
+    <div class="fragment-header">
+        <h4 class="text-center mb-0 title">DATOS DEL ASPIRANTE</h4>
+    </div>
+    <div class="fragment-body">
+        <h5 class="text-center" id="bienvenida">Bienvenido</h5>
+
+        <div class="align-items-center text-center p-2" >
+            <h5 id="nombrecompleto"></h5>
+        </div>
+
+        <h6 class="text-center pb-2" id="ciclo"></h6>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <h3 id="fua"></h3>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-floating mb-3">
+                    <h5 id="estatus"></h5>
+                </div>
+            </div>
+        </div>
+        <div class="form-floating mb-3">
+            <h5 id="carrera"></h5>
+        </div>
+
+        <div class="form-floating mb-3">
+            <h5 id="escuela"></h5>
+        </div>
+
+        <div class="form-floating mb-3">
+            <div class="align-items-center text-center" >
+                <button type="button" class="uabjo-btn-primary" disabled
+                        id="btnChangeCareer">Cambiar carrera
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="warningMessage" class="warning" style="display: none;">
+    <h2 class="text-center">&#9888; ¡Atención!</h2>
+    <hr>
+    <p><strong>Estás a punto de realizar un cambio de carrera. Ten en cuenta que los datos correspondientes a tu carrera actual
+        serán reemplazados por los de la nueva carrera que vayas a elegir.</strong></p>
+    <h5>¿Estás seguro de continuar?</h5>
+    <div class="align-items-center text-center">
+        <button id="btnContinue" class="uabjo-btn-primary">Continuar</button>
+        <button id="btnCancel" class="uabjo-btn-secondary">Cancelar</button>
+    </div>
+</div>

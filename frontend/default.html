@@ -1,0 +1,52 @@
+<div class="fragment-curp">
+    <div class="fragment-curp-header">
+        <h4 class="text-center mb-1">ADMISIÓN</h4>
+    </div>
+    <div class="fragment-curp-body">
+
+        <form class="needs-validation" id="frmMain" novalidate>
+            <div class="form-group">
+                <div class="form-floating mb-3">
+                    <input type="text"
+                           disabled
+                           class="form-control upper"
+                           placeholder="Ingrese su Curp"
+                           autocomplete="off"
+                           id="txtCurp"
+                           required
+                           pattern="([A-Z]{4}([0-9]{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|3[0-1])[HM](AS|BC|BS|CC|CL|CM|CS|CH|DF|DG|GT|GR|HG|JC|MC|MN|MS|NT|NL|OC|PL|QT|QR|SP|SL|SR|TC|TS|TL|VZ|YN|ZS|NE)[A-Z]{3}[0-9A-Z]\d)"
+                           maxlength="18">
+                    <label for="txtCurp">Curp:</label>
+                    <div class="invalid-feedback">La curp no tiene el formato apropiado</div>
+                </div>
+                <div class="form-floating input-group  mb-3 password-container"
+                     style="display: none;" id="divAccessCode">
+                    <input type="password" class="form-control"
+                           placeholder="Ingrese su Código de Acceso"
+                           id="txtAccessCode"
+                           autocomplete="current-password"
+                           maxlength="5">
+                    <label for="txtAccessCode">Código de Acceso:</label>
+                    <span class="show-password-icon" id="showPasswordIcon">&#x1F441;</span>
+                </div>
+
+                <div class="text-center mb-3 " style="display: none;  cursor:pointer; color:blue; text-decoration:underline;" id="linkCode">
+                    <span>Favor de reenviar el código a mi correo</span>
+                </div>
+
+                <div class="text-center mb-3">
+                    <a href="https://www.gob.mx/curp/" target="blank">Consulta Curp aqui</a>
+                </div>
+                <div class="align-items-center text-center ">
+                    <button type="button" class="uabjo-btn-primary "
+                            id="btnStart" disabled >   Iniciar  </button>
+
+                    <button type="button" class="uabjo-btn-primary"
+                            id="btnValidateCode"
+                            style="display:none;">Validar código</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>

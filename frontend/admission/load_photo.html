@@ -1,0 +1,66 @@
+    <div class="fragment">
+      <div class="fragment-header">
+        <h4 class="text-center mb-0">AGREGAR FOTOGRAFÍA</h4>
+      </div>
+      <div class="fragment-body">
+        <form id="photo-form" enctype="multipart/form-data">
+          <div class="row mb-3">
+            <div class="col-sm-7">
+              <div class="form-floating mb-3 ">
+                <input type="text" class="form-control" id="fua" readonly>
+                <label for="fua" class="form-label">FUA:</label>
+              </div>
+              <div class="form-floating mb-3 ">
+                <input type="text" class="form-control" id="curp" readonly>
+                <label for="curp" class="form-label">Curp:</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="nombre" readonly>
+                <label for="nombre" class="form-label">Nombre:</label>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea class="form-control" id="carrera" readonly></textarea>
+                <label for="carrera" class="form-label">Carrera:</label>
+              </div>
+              <div class="form-floating mb-4">
+                <textarea class="form-control" id="escuela" readonly ></textarea>
+                <label for="escuela" class="form-label">Escuela:</label>
+              </div>
+            </div>
+            <div class="col-sm-5">
+              <div class="form-group">
+                <div>
+                  <div class="mb-4 d-flex justify-content-center">
+                    <img id="photo" src="/assets/images/user_add.png" alt="image" style="max-width: 200px;"/>
+                    <img id="photoHidden" src="/assets/images/user_add.png" alt="image" style="display: none;"/>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <div class="uabjo-btn-primary btn-rounded" style="width: 110px;">
+                      <label class="form-label text-white m-1" for="file-photo">
+                        Seleccionar
+                      </label>
+                      <input type="file" class="form-control d-none"
+                             accept="image/*"
+                             onchange="face(event)" id="file-photo" name="photo"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-3" >
+            <div class="col-12">
+              <div class="align-items-center text-center" >
+                <button type="button" class="uabjo-btn-primary" onclick="analyzeImage()">Guardar Foto</button>
+              </div>
+            </div>
+            <progress id="progress-bar" value="0" max="100"></progress>
+            <div id="status"></div>
+
+          </div>
+        </form>
+
+      </div>
+
+    </div>
+

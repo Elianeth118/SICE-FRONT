@@ -1,0 +1,41 @@
+#alertWindow .modal-header {
+    height: 52px;
+    min-height: 52px;
+    border: 0;
+    background-color: #002849;
+    color: #fff;
+    text-align: center;
+}
+#alertWindow .modal-body { padding: 0 40px; }
+#alertWindow .modal-body  p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+}
+#alertWindow .modal-footer {
+    border: 0;
+}
+
+
+#alertWindow .submit {
+    height: 45px;
+    line-height: 45px;
+    /*width: 20px;*/
+    background: #002849;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+    padding: 3px;
+    min-width: 40px;
+    margin-bottom: 3px;
+}
+#alertWindow .submit:hover {
+    box-shadow: 3px 0 30px rgba(163,163,163, 1);
+}
